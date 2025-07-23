@@ -21,7 +21,7 @@ const Compile = () => {
             body: body,
             deviceToken: fcmToken,
         }
-        const result = await axios.post("http://localhost:3000/api/firebase/send-notification", data);
+        const result = await axios.post("https://internadminbackend-3.onrender.com", data);
         console.log(result);
         if(result.status === 200){
             toast.success(
